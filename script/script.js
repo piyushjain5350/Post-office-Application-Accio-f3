@@ -6,6 +6,7 @@ fetchIp();
 async function fetchIp(){
     const request = await fetch("https://ipinfo.io/json?token=4fd6f3942d54ff");
     const jsonResponse = await request.json();
+    // console.log(jsonResponse.hostname);
 
     ipVal.innerText = jsonResponse.ip;
     let userDetails={

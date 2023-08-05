@@ -20,16 +20,15 @@ let loc=userDetails.location.split(',');
 let lat=loc[0];
 let long=loc[1];
 
-// console.log(userDetails);
+console.log(userDetails);
 function setData(){
     ip.innerText=userDetails.ip;
     city.innerText=userDetails.city;
     region.innerText=userDetails.region;
     organsation.innerText=userDetails.organisation;
-    host.innerText=userDetails.hostname;
+    host.innerText=userDetails.hostname===undefined?"Not any Host":userDetails.hostname;
     latitude.innerText=lat;
     longitude.innerText=long;
-
     timeZone.innerText=userDetails.timezone;
     pincode.innerText=userDetails.pincode;
 
