@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post Office</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style/style.css">
+</head>
+<body>
+    <main>
+        <div class="main-container">
+            <div class="ip-details-container">
+                <div class="ipAddress">IP Address : <span id="ip">127.0.01</span></div>
+                <div class="ipDetails">
+                    <div class="ipDetails-section1">
+                        <p>Lat: <span id="latitude"></span></p>
+                        <p>Long: <span id="longitude"></span></p>
+                    </div>
+                    <div class="ipDetails-section2">
+                        <p>City: <span id="city"></span></p>
+                        <p>Region: <span id="region"></span></p>
+                    </div>
+                    <div class="ipDetails-section3">
+                        <p>Organisation: <span id="organisation"></span></p>
+                        <p>Host Name: <span id="host"></span></p>
+                    </div>
+                </div>
+            </div>
+            <div class="map-container">
+                <div class="heading">Your Current Location</div>
+                <div class="map" id="mapDisplay">
+                    
+                </div>
+            </div>
+            <div class="more-info-container">
+                <div class="heading">
+                    More Information About You
+                </div>
+                <div class="more-info-details">
+                    <p>Time Zone: <span id="timeZone"></span></p>
+                    <p>Date and Time: <span id="dateAndTime"></span></p>
+                    <p>Pincode: <span id="pincode"></span></p>
+                    <p>Message: <span id="pincodeNumber"></span></p>
+
+                </div>
+            </div>
+            <div class="post-office-container">
+                <div class="heading">Post Offices Near You</div>
+                <div class="searchBar">
+                    <img src="../assets/search.svg" alt=""><input type="text" id="searchInput" placeholder="Search By Name"></div>
+                <div id="post-office-cards">
+                    <!-- <div class="card">
+                        <p>Name: <span class="cardName"></span></p>
+                        <p>Branch Type: <span class="cardBranch"></span></p>
+                        <p>Delivey-status: <span class="cardStatus"></span></p>
+                        <p>District: <span class="cardDistrict"></span></p>
+                        <p>Division: <span class="cardDivision"></span></p>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="./script/script.js"></script>
+</body>
+</html>

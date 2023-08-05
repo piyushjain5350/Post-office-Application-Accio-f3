@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+.main-container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    /* padding: 2%; */
+}
+.main-container .primary-container{
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #000000;
+    padding: 2%;
+    /* gap: 70px; */
+}
+.main-container .primary-container .heading-primary-container{
+    height: 30vh;
+    width: 100%;
+    font-size: 10px;
+}
+.heading-primary-container .main-heading{
+    font-size: 3.6em;
+    font-weight: bold;
+    margin: 10px 0;
+    color: #575A85;
+}
+.heading-primary-container .secondary-heading{
+    font-size: 2.4em;
+    color: #B8BCCC;
+    font-weight: 400;
+    word-wrap: break-word;
+    margin-bottom: 20px;
+}
+.main-container .primary-container .image-primary-container{
+    height: 70vw;
+    width: 100%;
+}
+.image-primary-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.image-primary-container img{
+    width: 80%;
+    height: 80%;
+}
+
+.main-container .secondary-container{
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:20px;
+    justify-content: center;
+    background-color: #575A85;
+    font-size: 10px;
+}
+
+.main-container .secondary-container h2{
+    color: #B8BCCC;
+    font-size: 3.6em;
+    font-weight: 700;
+    word-wrap: break-word;
+}
+.main-container .secondary-container h2 #ipVal{
+    color: white;
+    font-size: 1em;
+    font-weight: 700;
+    word-wrap: break-word;
+}
+.main-container .secondary-container #ipDetails{
+    color: #B8BCCC;
+    font-size: 2.4em;
+    font-weight: 400;
+    word-wrap: break-word;
+    background-color: transparent;
+    border: 1px solid white;
+    padding: 8px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+ @media only screen and (min-width:425px) and (max-width: 900px) {
+    .main-container .primary-container .heading-primary-container{
+        font-size: 8px;
+    }
+    .main-container .primary-container .image-primary-container img{
+        width: 80%;
+        height: 80%;
+    }
+    .main-container .secondary-container{
+        font-size: 6px;
+    }
+
+}
+/*
+
+@media only screen and (max-width:425px){
+    .main-container{ 
+        display: flex;
+        flex-direction: column;
+    }
+    .main-container .primary-container{
+        width: 100vw;
+        height: 50vw;
+    }
+    .main-container .secondary-container{
+        width: 100vw;
+        height: 50vw;
+    }
+    .main-container .primary-container .heading-primary-container{
+        font-size: 8px;
+    }
+    .main-container .primary-container .image-primary-container img{
+        display: none;
+    }
+    .main-container .secondary-container{
+        font-size: 8px;
+    }
+
+}
+ */

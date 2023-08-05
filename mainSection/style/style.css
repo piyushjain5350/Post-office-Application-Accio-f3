@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+.main-container{
+    display: flex;
+    flex-direction: column;
+    background-color: #000000;
+}
+.main-container .ip-details-container{
+    padding: 2%;
+    display: flex;
+    flex-direction: column;
+    font-size: 10px;
+    gap: 10px;
+}
+.main-container .ip-details-container .ipAddress{
+    color: rgba(184, 188, 204, 0.50);
+    font-size: 3.4em;
+    font-weight: 700;
+    word-wrap: break-word;
+}
+.main-container .ip-details-container .ipAddress #ip{
+    color: #B8BCCC;
+    font-size: 1em;
+    font-weight: 700;
+    word-wrap: break-word;
+}
+.main-container .ip-details-container .ipDetails{
+    display: flex;
+    gap:10%;
+}
+
+ p{
+    color: rgba(184, 188, 204, 0.50);
+    font-size: 24px;
+    font-family: Inter;
+    font-weight: 700;
+    word-wrap: break-word;
+}
+
+.heading{
+    color: #B8BCCC;
+    font-size: 36px;
+    font-weight: 700;
+    text-align: center;
+    word-wrap: break-word;
+    margin-bottom: 20px;
+}
+
+.main-container .map-container{
+    background-color: #575A85;
+    padding: 2%;
+}
+.main-container .map-container .map iframe{
+    width: 100%;
+    height: 450px;
+    padding: 20px;
+    border: none;
+}
+.main-container .more-info-container{
+    padding: 2%;
+}
+.main-container .more-info-container .more-info-details{
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+    padding:10px 0;
+}
+.main-container .post-office-container{
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+    padding: 2%;
+}
+.main-container .post-office-container .searchBar{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    border: 1px solid  #575A85;
+    padding: 10px;
+    border-radius: 10px;
+}
+.post-office-container .searchBar img{
+    width: 24px;
+    height: 24px;
+}
+.searchBar input{
+    background-color: transparent;
+    width: 100%;
+    font-size: 24px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 5px;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    background-color: #575A85;
+    color: #B8BCCC;
+    padding: 10px;
+    border-radius: 10px;
+    gap:10px;
+}
+#post-office-cards{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    column-gap: 20px;
+    row-gap: 20px;
+}
+
+span{
+    color: #B8BCCC;
+}
